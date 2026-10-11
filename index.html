@@ -54,20 +54,20 @@
 :root{
   --font-display:'Lalezar','Vazirmatn',Tahoma,sans-serif;
   --font-body:'Vazirmatn',Tahoma,'Segoe UI',sans-serif;
-  --hero-a:#0a1426; --hero-b:#16294d; --hero-ink:#fff3dd; --hero-muted:#c3cfe6; --glow:#ffb55c; --cl-main:#d9e4fa; --cl-shade:#8ba5d6; --cl-hi:#f6f9ff;
-  --bg:#f2f5fa; --card:#ffffff; --ink:#1b2a41; --muted:#586780; --line:#dce4ef; --soft:#e8eef7;
-  --accent:#f2b050; --accent-ink:#2b1a05; --price:#97520f;
-  --btn:#1f3a68; --btn-ink:#ffffff; --danger:#b3321f;
-  --shadow:0 8px 24px rgba(27,42,65,.10); --shadow-hi:0 20px 44px rgba(27,42,65,.20); --ph:#9bb2d6;
+  --hero-a:#120a06; --hero-b:#33200f; --hero-ink:#f8ecd6; --hero-muted:#cdb99c; --glow:#e9a650; --cl-main:#f0e2c8; --cl-shade:#c4a77f; --cl-hi:#fff8ea;
+  --bg:#f3e9d7; --card:#fbf4e6; --ink:#2a1a10; --muted:#755f4b; --line:#dfcdb0; --soft:#ecdcc0;
+  --accent:#d99a4a; --accent-ink:#2a1708; --price:#85441a;
+  --btn:#2a1a10; --btn-ink:#f8ecd6; --danger:#b3321f;
+  --shadow:0 6px 18px rgba(60,35,15,.10); --shadow-hi:0 14px 30px rgba(60,35,15,.18); --ph:#c4a77f;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0b1424; --card:#13223e; --ink:#eaf0fb; --muted:#a2b2d0; --line:#223657; --soft:#1a2d52;
-  --accent:#f2b25a; --accent-ink:#2b1a05; --price:#f6bd70; --btn:#f2b25a; --btn-ink:#241606; --danger:#ff8f7c;
-  --shadow:0 8px 24px rgba(0,0,0,.4); --shadow-hi:0 20px 44px rgba(0,0,0,.55); --ph:#4a6aa6; color-scheme:dark}}
+  --bg:#150d08; --card:#241610; --ink:#f4e8d2; --muted:#bba88e; --line:#3b281b; --soft:#2f1e14;
+  --accent:#e0a458; --accent-ink:#2a1708; --price:#ebb978; --btn:#e0a458; --btn-ink:#1d1006; --danger:#ff9a85;
+  --shadow:0 6px 18px rgba(0,0,0,.4); --shadow-hi:0 14px 30px rgba(0,0,0,.55); --ph:#6e5238; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0b1424; --card:#13223e; --ink:#eaf0fb; --muted:#a2b2d0; --line:#223657; --soft:#1a2d52;
-  --accent:#f2b25a; --accent-ink:#2b1a05; --price:#f6bd70; --btn:#f2b25a; --btn-ink:#241606; --danger:#ff8f7c;
-  --shadow:0 8px 24px rgba(0,0,0,.4); --shadow-hi:0 20px 44px rgba(0,0,0,.55); --ph:#4a6aa6; color-scheme:dark}
+  --bg:#150d08; --card:#241610; --ink:#f4e8d2; --muted:#bba88e; --line:#3b281b; --soft:#2f1e14;
+  --accent:#e0a458; --accent-ink:#2a1708; --price:#ebb978; --btn:#e0a458; --btn-ink:#1d1006; --danger:#ff9a85;
+  --shadow:0 6px 18px rgba(0,0,0,.4); --shadow-hi:0 14px 30px rgba(0,0,0,.55); --ph:#6e5238; color-scheme:dark}
 body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.8}
 #app{overflow-x:clip}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -81,7 +81,7 @@ textarea{resize:vertical;min-height:4.5rem}
 .hero .wrap{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .hero-text{flex:1 1 300px;min-width:0}
 .eyebrow{margin:0;font-size:.95rem;letter-spacing:.05em;color:var(--hero-muted)}
-.brand{font-family:var(--font-display);font-weight:400;font-size:clamp(5rem,20vw,9.5rem);line-height:1.05;margin:.05em 0;background:linear-gradient(180deg,#fff6e3 10%,#ffc77d 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 28px rgba(255,170,80,.32))}
+.brand{font-family:var(--font-display);font-weight:400;font-size:clamp(5rem,20vw,9.5rem);line-height:1.05;margin:.05em 0;background:linear-gradient(180deg,#fff3dc 10%,#e6b068 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 28px rgba(255,170,80,.32))}
 .tag{font-size:1.15rem;color:var(--hero-ink);margin:0 0 18px;max-width:28ch;text-wrap:balance;opacity:.92}
 .facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
 .fact{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:var(--hero-ink);border-radius:999px;padding:.05rem .95rem;font-size:.9rem;backdrop-filter:blur(6px)}
@@ -127,23 +127,23 @@ textarea{resize:vertical;min-height:4.5rem}
 
 /* menu */
 main{padding-block:30px 120px;scroll-margin-top:70px}
-.sec{margin-bottom:40px;scroll-margin-top:84px}
+.sec{max-width:780px;margin:0 auto 36px;scroll-margin-top:84px}
 .sec h2{font-family:var(--font-display);font-weight:400;font-size:2.2rem;line-height:1.3;margin:0 0 14px;display:flex;align-items:center;gap:14px}
 .sec h2::after{content:"";height:2px;flex:1;background:linear-gradient(90deg,var(--accent),transparent);border-radius:2px;opacity:.7}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:20px}
-.item{background:var(--card);border-radius:28px 28px 28px 10px;padding:10px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;animation:up .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 70ms)}
-.item:hover{transform:translateY(-8px) rotate(-.4deg);box-shadow:var(--shadow-hi)}
-.pic{position:relative;aspect-ratio:4/3;border-radius:20px 20px 20px 6px;overflow:hidden;background:var(--soft)}
+.grid{display:flex;flex-direction:column;gap:12px}
+.item{background:var(--card);border-radius:20px;padding:10px;box-shadow:var(--shadow);display:flex;flex-direction:row;align-items:center;gap:14px;min-width:0;border:1px solid var(--line);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;animation:up .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 60ms)}
+.item:hover{transform:translateY(-3px);box-shadow:var(--shadow-hi)}
+.pic{position:relative;flex:none;width:112px;height:84px;border-radius:14px;overflow:hidden;background:var(--soft)}
 .pic img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
-.item:hover .pic img{transform:scale(1.08)}
+.item:hover .pic img{transform:scale(1.1)}
 .ph{width:100%;height:100%;display:grid;place-items:center;color:var(--ph);background:linear-gradient(135deg,var(--soft),var(--card))}
-.ph svg{width:40%;max-width:110px}
-.badge{position:absolute;top:10px;inset-inline-start:10px;background:var(--accent);color:var(--accent-ink);border-radius:999px;font-size:.8rem;font-weight:700;padding:0 .8rem;box-shadow:0 4px 12px rgba(0,0,0,.2)}
-.ibody{padding:12px 10px 8px;display:flex;flex-direction:column;gap:4px;flex:1}
-.ibody h3{margin:0;font-size:1.12rem;font-weight:700;line-height:1.5}
-.ibody p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.75;flex:1}
-.ifoot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
-.price{background:var(--soft);color:var(--price);font-weight:700;border-radius:999px;padding:.05rem .95rem;font-variant-numeric:tabular-nums}
+.ph svg{width:46%;max-width:60px}
+.badge{display:inline-block;background:var(--accent);color:var(--accent-ink);border-radius:999px;font-size:.72rem;font-weight:700;padding:0 .65rem;margin-inline-start:8px;vertical-align:middle;line-height:1.7}
+.ibody{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.ibody h3{margin:0;font-size:1.05rem;font-weight:700;line-height:1.6}
+.ibody p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.side{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:2px;padding-inline-end:4px}
+.price{background:var(--soft);color:var(--price);font-weight:700;font-size:.95rem;border-radius:999px;padding:.05rem .85rem;white-space:nowrap;font-variant-numeric:tabular-nums}
 .sold{font-size:.85rem;color:var(--muted)}
 .item.off .pic{opacity:.5;filter:grayscale(.6)}
 .item.off h3{color:var(--muted)}
@@ -163,7 +163,7 @@ footer.foot{text-align:center;color:var(--muted);font-size:.85rem;padding:0 16px
 .dot{width:9px;height:9px;border-radius:50%;background:var(--accent)}
 
 /* drawer */
-.back{position:fixed;inset:0;background:rgba(8,14,28,.55);z-index:39}
+.back{position:fixed;inset:0;background:rgba(20,10,5,.55);z-index:39}
 .panel{position:fixed;inset-block:0;inset-inline-start:0;width:min(480px,100%);background:var(--card);z-index:40;display:flex;flex-direction:column;box-shadow:var(--shadow);padding-top:env(safe-area-inset-top,0px)}
 .ph-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px 6px}
 .ph-head h2{font-family:var(--font-display);font-weight:400;font-size:1.7rem;margin:0}
@@ -191,7 +191,7 @@ footer.foot{text-align:center;color:var(--muted);font-size:.85rem;padding:0 16px
 .warn{background:var(--soft);border-radius:18px;padding:10px 14px;font-size:.92rem;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 #toast{position:fixed;inset-inline:0;bottom:84px;display:flex;justify-content:center;z-index:50;pointer-events:none}
 #toast span{background:var(--ink);color:var(--bg);border-radius:999px;padding:.3rem 1.2rem;font-size:.92rem;box-shadow:var(--shadow)}
-@media (max-width:520px){.two{grid-template-columns:1fr}.strip .wrap{flex-wrap:wrap}.search{flex:1 1 100%}.hero{padding-block:130px 110px}.scene{order:-1;width:min(260px,70%)}}
+@media (max-width:520px){.two{grid-template-columns:1fr}.strip .wrap{flex-wrap:wrap}.search{flex:1 1 100%}.hero{padding-block:130px 110px}.scene{order:-1;width:min(260px,70%)}.pic{width:84px;height:68px}.item{gap:10px}.ibody h3{font-size:1rem}}
 @media (prefers-reduced-motion:reduce){.wisp{animation:none;opacity:.5}.hc,.cloud-up{animation:none}.spark{display:none}.scene .halo,.wave .w2{animation:none}.item{animation:none}.item:hover{transform:none}html{scroll-behavior:auto}}</style></head><body>
 <div id="app" dir="rtl" lang="fa"></div>
 <script type="application/json" id="abra-data">{"cafe":{"name":"ابرا","tagline":"قهوه‌ای که مثل ابر، آرام و نرم است","hours":"","address":"","currency":"تومان"},"categories":[{"id":"hot","name":"نوشیدنی گرم"},{"id":"cold","name":"نوشیدنی سرد"},{"id":"sweet","name":"کیک و دسر"}],"products":[{"id":"s1","sample":true,"cat":"hot","name":"اسپرسو","desc":"دو شات قهوه‌ی تازه‌آسیاب، غلیظ و معطر.","price":65000,"badge":"","avail":true,"img":""},{"id":"s2","sample":true,"cat":"hot","name":"لاته ابری","desc":"اسپرسو با شیر بخار‌داده و فوم سفید و سبک.","price":105000,"badge":"پیشنهاد ابرا","avail":true,"img":""},{"id":"s3","sample":true,"cat":"hot","name":"چای ماسالا","desc":"چای سیاه با ادویه‌ی گرم و شیر.","price":75000,"badge":"","avail":true,"img":""},{"id":"s4","sample":true,"cat":"cold","name":"آیس لاته","desc":"اسپرسو، شیر سرد و یخ فراوان.","price":110000,"badge":"","avail":true,"img":""},{"id":"s5","sample":true,"cat":"cold","name":"لیموناد نعنا","desc":"لیمو تازه، نعنا و کمی عسل.","price":80000,"badge":"","avail":false,"img":""},{"id":"s6","sample":true,"cat":"sweet","name":"چیزکیک","desc":"چیزکیک خامه‌ای با سس توت‌فرنگی.","price":130000,"badge":"","avail":true,"img":""}]}</script>
@@ -248,17 +248,17 @@ var SCENE=
 '<svg viewBox="0 0 360 420" role="img" aria-label="فنجان قهوه با بخار">'+
  '<defs>'+
   '<filter id="smoke" x="-60%" y="-40%" width="220%" height="180%"><feTurbulence type="fractalNoise" baseFrequency="0.011 0.028" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="30" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="5.5"/></filter>'+
-  '<linearGradient id="cupg" x1="0" x2="1"><stop offset="0" stop-color="#c9d5ec"/><stop offset=".45" stop-color="#ffffff"/><stop offset="1" stop-color="#aebbd8"/></linearGradient>'+
-  '<linearGradient id="sauc" x1="0" x2="1"><stop offset="0" stop-color="#b6c4e0"/><stop offset=".5" stop-color="#f4f7fd"/><stop offset="1" stop-color="#9eb0d2"/></linearGradient>'+
+  '<linearGradient id="cupg" x1="0" x2="1"><stop offset="0" stop-color="#d9c5a0"/><stop offset=".45" stop-color="#fff8e8"/><stop offset="1" stop-color="#bda37a"/></linearGradient>'+
+  '<linearGradient id="sauc" x1="0" x2="1"><stop offset="0" stop-color="#c7b08c"/><stop offset=".5" stop-color="#f7edda"/><stop offset="1" stop-color="#ad956c"/></linearGradient>'+
   '<radialGradient id="cof" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#7a4a31"/><stop offset=".7" stop-color="#4a2a1a"/><stop offset="1" stop-color="#2f1a10"/></radialGradient>'+
  '</defs>'+
  '<ellipse cx="180" cy="374" rx="150" ry="16" fill="rgba(0,0,0,.35)"/>'+
  '<ellipse cx="180" cy="356" rx="142" ry="25" fill="url(#sauc)"/>'+
- '<ellipse cx="180" cy="352" rx="104" ry="14" fill="rgba(110,130,170,.35)"/>'+
+ '<ellipse cx="180" cy="352" rx="104" ry="14" fill="rgba(120,88,52,.3)"/>'+
  '<path d="M276 232C334 226 336 312 262 318" fill="none" stroke="url(#cupg)" stroke-width="15" stroke-linecap="round"/>'+
  '<path d="M80 206V268C80 328 130 354 180 354S280 328 280 268V206Z" fill="url(#cupg)"/>'+
  '<path d="M96 232C96 290 120 330 150 340" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="7" stroke-linecap="round"/>'+
- '<ellipse cx="180" cy="206" rx="101" ry="26" fill="#f3f6fc"/>'+
+ '<ellipse cx="180" cy="206" rx="101" ry="26" fill="#fbf1de"/>'+
  '<ellipse cx="180" cy="208" rx="90" ry="21" fill="url(#cof)"/>'+
  '<ellipse cx="180" cy="208" rx="74" ry="15" fill="none" stroke="rgba(255,205,150,.25)" stroke-width="3"/>'+
  '<path d="M180 218C160 213 164 202 173 203C177 203 180 206 180 206C180 206 183 203 187 203C196 202 200 213 180 218Z" fill="rgba(255,238,212,.88)"/>'+
@@ -313,9 +313,9 @@ function renderHero(){
 function itemHtml(p,d,i){
   var cur_=d.cafe.currency||'';
   var pic=p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'" loading="lazy">':'<div class="ph">'+CLOUD+'</div>';
-  return '<article class="item'+(p.avail===false?' off':'')+'" style="--i:'+Math.min(i,10)+'"><div class="pic">'+pic+(p.badge?'<span class="badge">'+esc(p.badge)+'</span>':'')+'</div>'+
-   '<div class="ibody"><h3>'+esc(p.name)+'</h3>'+(p.desc?'<p>'+esc(p.desc)+'</p>':'<p></p>')+
-   '<div class="ifoot"><span class="price">'+fmt(p.price)+' '+esc(cur_)+'</span>'+(p.avail===false?'<span class="sold">تمام شد</span>':'')+'</div></div></article>';
+  return '<article class="item'+(p.avail===false?' off':'')+'" style="--i:'+Math.min(i,10)+'"><div class="pic">'+pic+'</div>'+
+   '<div class="ibody"><h3>'+esc(p.name)+(p.badge?'<span class="badge">'+esc(p.badge)+'</span>':'')+'</h3>'+(p.desc?'<p>'+esc(p.desc)+'</p>':'')+'</div>'+
+   '<div class="side"><span class="price">'+fmt(p.price)+' '+esc(cur_)+'</span>'+(p.avail===false?'<span class="sold">تمام شد</span>':'')+'</div></article>';
 }
 
 var spy=null;
