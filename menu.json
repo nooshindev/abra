@@ -1,0 +1,101 @@
+{
+ "cafe": {
+  "name": "ابرا",
+  "tagline": "قهوه‌ای که مثل ابر، آرام و نرم است",
+  "hours": "",
+  "address": "",
+  "currency": "تومان"
+ },
+ "categories": [
+  {
+   "id": "hot",
+   "name": "نوشیدنی گرم"
+  },
+  {
+   "id": "cold",
+   "name": "نوشیدنی سرد"
+  },
+  {
+   "id": "sweet",
+   "name": "کیک و دسر"
+  }
+ ],
+ "products": [
+  {
+   "id": "s1",
+   "sample": true,
+   "cat": "hot",
+   "name": "اسپرسو",
+   "desc": "دو شات قهوه‌ی تازه‌آسیاب، غلیظ و معطر.",
+   "price": 65000,
+   "badge": "",
+   "avail": true,
+   "img": ""
+  },
+  {
+   "id": "s2",
+   "sample": true,
+   "cat": "hot",
+   "name": "لاته ابری",
+   "desc": "اسپرسو با شیر بخار‌داده و فوم سفید و سبک.",
+   "price": 105000,
+   "badge": "پیشنهاد ابرا",
+   "avail": true,
+   "img": ""
+  },
+  {
+   "id": "s3",
+   "sample": true,
+   "cat": "hot",
+   "name": "چای ماسالا",
+   "desc": "چای سیاه با ادویه‌ی گرم و شیر.",
+   "price": 75000,
+   "badge": "",
+   "avail": true,
+   "img": ""
+  },
+  {
+   "id": "s4",
+   "sample": true,
+   "cat": "cold",
+   "name": "آیس لاته",
+   "desc": "اسپرسو، شیر سرد و یخ فراوان.",
+   "price": 110000,
+   "badge": "",
+   "avail": true,
+   "img": ""
+  },
+  {
+   "id": "s5",
+   "sample": true,
+   "cat": "cold",
+   "name": "لیموناد نعنا",
+   "desc": "لیمو تازه، نعنا و کمی عسل.",
+   "price": 80000,
+   "badge": "",
+   "avail": false,
+   "img": ""
+  },
+  {
+   "id": "s6",
+   "sample": true,
+   "cat": "sweet",
+   "name": "چیزکیک",
+   "desc": "چیزکیک خامه‌ای با سس توت‌فرنگی.",
+   "price": 130000,
+   "badge": "",
+   "avail": true,
+   "img": ""
+  },
+  {
+   "id": "xmvawfyrtt10w",
+   "cat": "hot",
+   "name": "هات چاکلت",
+   "desc": "",
+   "price": 90000,
+   "badge": "",
+   "avail": true,
+   "img": ""
+  }
+ ]
+}
