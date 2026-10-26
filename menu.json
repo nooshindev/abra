@@ -66,6 +66,10 @@
   {
    "id": "xmvp15rn83m4a",
    "name": "ماکتیل و اسموتی"
+  },
+  {
+   "id": "xmvp5a0c4qbco",
+   "name": "نوشیدنی آماده"
   }
  ],
  "products": [
@@ -975,7 +979,7 @@
    "name": "سیب ویژه",
    "desc": "سیب زمینی سرخ کرده - ژامبون - پنیر - ذرت - قارچ - فلفل دلمه ای",
    "price": 349000,
-   "badge": "",
+   "badge": "پیشنهاد ابرا",
    "avail": true,
    "img": ""
   },
@@ -1607,6 +1611,26 @@
    "price": 0,
    "badge": "",
    "avail": false,
+   "img": ""
+  },
+  {
+   "id": "xmvp5ainb3vzm",
+   "cat": "xmvp5a0c4qbco",
+   "name": "آب",
+   "desc": "",
+   "price": 20000,
+   "badge": "",
+   "avail": true,
+   "img": ""
+  },
+  {
+   "id": "xmvp5atm3x8he",
+   "cat": "xmvp5a0c4qbco",
+   "name": "نوشابه",
+   "desc": "",
+   "price": 74000,
+   "badge": "",
+   "avail": true,
    "img": ""
   }
  ]
